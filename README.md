@@ -1,3 +1,5 @@
+<img src="./evolutionary-design-of-molecules.png" width="400px"></img>
+
 ## Evolutionary Design of Molecules with Deep Learning and Genetic Algorithms (wip)
 
 Unofficial implementation of the paper <a href="https://www.nature.com/articles/s41598-021-96812-8">Evolutionary design of molecules based on deep learning and a genetic algorithm</a>.
