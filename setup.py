@@ -16,6 +16,7 @@ setup(
     'evolutionary algorithms'
   ],
   install_requires=[
+    'beartype',
     'einops>=0.7.0',
     'torch>=2.0',
     'vector-quantize-pytorch>=1.12.1'

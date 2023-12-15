@@ -2,6 +2,7 @@ import torch
 from torch import nn, einsum, Tensor
 from torch.nn import Module, ModuleList
 
+from beartype import beartype
 from einops import rearrange
 
 from vector_quantize_pytorch import LFQ
@@ -13,6 +14,7 @@ def exists(v):
 
 # genetic algorithm
 
+@beartype
 def evolve(
     init_pool: Tensor,
     calc_fitness: Callable,
@@ -97,6 +99,15 @@ def evolve(
         generation += 1
 
     return pool
+
+# autoencoder
+
+class MolecularAutoencoder(Module):
+    def __init__(self):
+        super().__init__()
+
+    def forward(self, x):
+        raise NotImplementedError
 
 # main class
 
